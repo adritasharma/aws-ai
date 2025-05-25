@@ -10,4 +10,18 @@ How does AI work:
 - Run a algorithm (eg : Classification Algorithm ) - it groups the images of all the fruits - apples together,  bananas togethe etcr)
 - User provides a new image of apple to the model - since model is trained with so many images og apple that it identifies it as an apple
 
+### AI Components
+
+- Data Layer
+  Collect vast amount fa data
+  
+- ML Framework and Algorithm Layer
+  Defina a ML framework to solve a problem
+
+- Model Layer
+  We set parameter, function, optimizer function to create a actual model and train it
+
+- Application Layer
+  Expose the model to users  
+
   
