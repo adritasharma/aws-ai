@@ -28,9 +28,25 @@ How does AI work:
   
   Expose the model to users
 
-  ### Machone Laerning
+### Machone Laerning
 
   ML is a type of AI to build methods that allow machines to learn from data. We can make prediction based on data used to train the models.
+
+**Regression**
+
+Regression is a machine learning technique used to predict numerical values based on past data.
+Example: Predicting house prices based on size, location, and amenities.
+
+**Classification**
+
+Classification is used when we need to categorize data into groups.
+Example: Classifying emails as spam or not spam, or recognizing if an image contains a dog or a cat.
+
+**Deep Learning**
+
+Deep learning is an advanced type of machine learning that uses multi-layered neural networks to process data and learn patterns.
+Example: Deep learning powers speech recognition, self-driving cars, and AI-generated images.
+
 
   
 
