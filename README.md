@@ -60,6 +60,13 @@ Generative AI (Gen-AI)
 
 It refers to artificial intelligence that uses foundation models trained on vast amounts of unlabeled data to generate new content—such as text, images, music, and code. These models learn underlying patterns and relationships, allowing them to adapt to different generation tasks without needing specific training for each scenario. This adaptability makes Gen-AI powerful for tasks like content creation, automated design, and AI-assisted problem-solving.
 
+Gem AI models leverage Transformer model (LLM)
+
+A Transformer model process sentence as whole instead of word by word. It processes text by focusing on important words in a sentence, instead of reading everything in order. This makes it really good at tasks like translating languages, summarizing text, and answering questions.
+
+A Large Language Model (LLM) is a Transformer trained on a huge amount of text to learn how people write and speak. It can generate responses, explain concepts, and even help with writing code. Examples include GPT, BERT, and LLaMA, which power chatbots and AI assistants.
+
+
 
 
   
