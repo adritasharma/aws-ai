@@ -72,6 +72,59 @@ Would you like an example of how diffusion models improve image quality? 🚀
 
 A multimodal model is an AI system that processes and understands multiple types of data, like text, images, audio, and video, at the same time. It can combine information from different sources to provide more accurate and meaningful responses. Examples include GPT-4V, which can analyze both text and images together.
 
+### ML Terms
+
+Sure! Here are the one-liner explanations along with their full forms:
+
+- **GPT (Generative Pre-trained Transformer)** – A deep learning model that generates human-like text by predicting the next word in a sentence.  
+- **BERT (Bidirectional Encoder Representations from Transformers)** – An NLP model that understands the context of words in a sentence by analyzing them from both directions.  
+- **RNN (Recurrent Neural Network)** – A neural network designed for sequential data, like speech and time-series analysis, by remembering previous inputs.  
+- **ResNet (Residual Neural Network)** – A deep learning model that solves the vanishing gradient problem, making neural networks more efficient for image recognition.  
+- **SVM (Support Vector Machine)** – A machine learning algorithm that classifies data by finding the optimal boundary between different categories.  
+- **WaveNet** – A deep learning model for generating realistic human speech by processing audio waveforms.  
+- **GAN (Generative Adversarial Network)** – A framework where two neural networks (generator and discriminator) compete to create highly realistic images and data.  
+- **XGBoost (eXtreme Gradient Boosting)** – A powerful machine learning algorithm that improves prediction accuracy by sequentially combining multiple decision trees while minimizing errors
+
+
+
+### **Training Data in AI & Machine Learning**
+Training data is the **foundation** of any AI model—it consists of examples that help the model learn patterns and make predictions. High-quality data leads to **accurate AI models**, while poor data can result in **biased or faulty results**.
+
+---
+
+### **Types of Training Data**
+1️⃣ **Labeled vs. Unlabeled Data**  
+- **Labeled Data**: Each input has a **known outcome** (e.g., images labeled as "dog" or "cat").  
+  ✅ Used in **supervised learning** for classification and regression.  
+- **Unlabeled Data**: The model finds patterns **without predefined labels** (e.g., clustering customer behaviors).  
+  ✅ Used in **unsupervised learning** for feature discovery.  
+
+---
+
+2️⃣ **Structured vs. Unstructured Data**  
+- **Structured Data**: Organized in a fixed format, like tables or databases (e.g., financial transactions, Excel sheets).  
+  ✅ Easy to process using SQL, dataframes, and traditional algorithms.  
+- **Unstructured Data**: No predefined format, like **text, images, videos, audio files** (e.g., emails, social media posts).  
+  ✅ Requires advanced AI techniques like **Natural Language Processing (NLP)** or **Computer Vision**.
+
+---
+
+3️⃣ **Garbage Data (Bad Training Data)**  
+🚨 **Garbage In, Garbage Out** – Poor-quality data leads to inaccurate AI models!  
+- **Noisy Data**: Contains **errors, duplicate values, inconsistencies**.  
+- **Bias in Data**: Unbalanced datasets can create **biased AI decisions**.  
+- **Incomplete Data**: Missing values can **mislead AI models**.  
+
+Example: An AI model trained on **biased hiring data** might unintentionally **discriminate** against certain candidates.  
+
+---
+
+### **Why Good Training Data Matters?**
+✅ Improves AI accuracy  
+✅ Reduces bias in predictions  
+✅ Helps AI make meaningful decisions  
+
+Would you like an example of **how training data affects real-world AI models**? 🚀
 
 
 
