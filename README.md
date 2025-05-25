@@ -56,6 +56,11 @@ Newral network example:
 A neural network is trained to recognize handwritten numberts.
 Tge input layer process pixel data while the hiddenlayers identify features like lines and curves. For instance, vertical lines are present in numbers 1, 4 and 7 so a layer might detect such lines. Similarly, the numbers 6, 8 and 0 have curved buttoms which another layer may recognize. By combining these learned features, the network can accurately identify numbers
 
+Generative AI (Gen-AI) 
+
+It refers to artificial intelligence that uses foundation models trained on vast amounts of unlabeled data to generate new content—such as text, images, music, and code. These models learn underlying patterns and relationships, allowing them to adapt to different generation tasks without needing specific training for each scenario. This adaptability makes Gen-AI powerful for tasks like content creation, automated design, and AI-assisted problem-solving.
+
+
 
   
 
