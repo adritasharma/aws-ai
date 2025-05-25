@@ -47,6 +47,15 @@ Example: Classifying emails as spam or not spam, or recognizing if an image cont
 Deep learning is an advanced type of machine learning that uses multi-layered neural networks to process data and learn patterns.
 Example: Deep learning powers speech recognition, self-driving cars, and AI-generated images.
 
+Neural Networks
+Neural networks are inspired by how the human brain works. They consist of layers of nodes (neurons) that process data in a structured way.
+Example: Facial recognition on smartphones uses neural networks to detect faces.
+
+Newral network example:
+
+A neural network is trained to recognize handwritten numberts.
+Tge input layer process pixel data while the hiddenlayers identify features like lines and curves. For instance, vertical lines are present in numbers 1, 4 and 7 so a layer might detect such lines. Similarly, the numbers 6, 8 and 0 have curved buttoms which another layer may recognize. By combining these learned features, the network can accurately identify numbers
+
 
   
 
