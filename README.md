@@ -66,6 +66,13 @@ A Transformer model process sentence as whole instead of word by word. It proces
 
 A Large Language Model (LLM) is a Transformer trained on a huge amount of text to learn how people write and speak. It can generate responses, explain concepts, and even help with writing code. Examples include GPT, BERT, and LLaMA, which power chatbots and AI assistants.
 
+A diffusion model is an AI technique that learns to create realistic images by gradually refining noise into meaningful patterns. It works by reversing a process that first adds random noise to an image, then systematically removes it to generate high-quality visuals. These models are widely used in AI-powered image generation, like DALL·E and Stable Diffusion.
+Would you like an example of how diffusion models improve image quality? 🚀
+
+
+A multimodal model is an AI system that processes and understands multiple types of data, like text, images, audio, and video, at the same time. It can combine information from different sources to provide more accurate and meaningful responses. Examples include GPT-4V, which can analyze both text and images together.
+
+
 
 
 
