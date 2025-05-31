@@ -102,9 +102,9 @@ Training data is the **foundation** of any AI model—it consists of examples th
 ---
 
 2️⃣ **Structured vs. Unstructured Data**  
-- **Structured Data**: Organized in a fixed format, like tables or databases (e.g., financial transactions, Excel sheets).  
+- **Structured Data**: Organized in a fixed format, like tables or databases (e.g., financial transactions, Excel sheets, **time series data** (stocks price over a year)).  
   ✅ Easy to process using SQL, dataframes, and traditional algorithms.  
-- **Unstructured Data**: No predefined format, like **text, images, videos, audio files** (e.g., emails, social media posts).  
+- **Unstructured Data**: No predefined format, like , **text, images, videos, audio files** (e.g., emails, social media posts).  
   ✅ Requires advanced AI techniques like **Natural Language Processing (NLP)** or **Computer Vision**.
 
 ---
