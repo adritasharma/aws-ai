@@ -261,6 +261,58 @@ Real-World Application
 Feature engineering is crucial for supervised learning, where labeled data helps predict outcomes.
 Example: Spam detection – AI analyzes email text and extracts features like word frequency, sender credibility, and length of email to classify messages as spam or not spam.
 
+### **Unsupervised & Semi-Supervised Learning Explained**  
+
+Unsupervised learning involves **machine learning on unlabeled data**, where the algorithm identifies patterns, relationships, or structures **without predefined labels**. The AI **groups data points** based on similarities, but humans must interpret what the groups represent.
+
+---
+
+### **Key Unsupervised Learning Techniques**  
+
+🔹 **Clustering** – Groups similar data points together.  
+✔ Example: **Customer segmentation** – AI identifies distinct customer behavior patterns for targeted marketing.  
+
+![image](https://github.com/user-attachments/assets/63f8e9ff-f935-46b7-bfff-87ea512ddd59)
+
+
+🔹 **Association Rule Learning** – Finds relationships between items in datasets.  
+✔ Example: In supermarkets, customers who buy **bread** often buy **butter**, so stores place them together to increase sales.  
+
+🔹 **Anomaly Detection** – Identifies unusual data points.  
+✔ Example: **Fraud detection** – AI spots suspicious transactions that don’t match typical behavior patterns.
+![image](https://github.com/user-attachments/assets/97910fc6-8167-460e-af96-9d8c21881dca)
+
+
+
+---
+
+### **Example: Customer Segmentation (Clustering)**  
+Imagine a retail store analyzing customer purchases:  
+✅ **Group 1** – Pizza, chips, beer (students)  
+✅ **Group 2** – Baby shampoo, wipes (new parents)  
+✅ **Group 3** – Fruits, vegetables (health-conscious buyers)  
+
+The AI **clusters** customers into categories, helping businesses **personalize recommendations** and marketing campaigns.  
+
+📊 **Visual Representation**  
+```
+    Purchase Behavior → AI Clustering → Customer Groups
+    🛍️ 🛍️ (Students)   🍼 🍼 (Parents)   🥦 🥦 (Health-conscious)
+```
+
+---
+
+### **Semi-Supervised Learning – A Mix of Supervised & Unsupervised**  
+Sometimes, labeled data is **limited**, but we have lots of **unlabeled data**.  
+
+✔ First, the AI **learns from a small labeled dataset**.  
+✔ Then, it **generates pseudo-labels** for the remaining unlabeled data.  
+✔ Finally, the AI **re-trains** on the full dataset for better accuracy.  
+
+Example: AI recognizes **images of apples** but has few labeled apple images.  
+✅ It learns from labeled apple images, then **labels more apple-like images** on its own.  
+
+![image](https://github.com/user-attachments/assets/816d99b8-2169-474b-99ab-c3e284af8669)
 
 
 
