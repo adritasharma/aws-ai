@@ -126,6 +126,47 @@ Example: An AI model trained on **biased hiring data** might unintentionally **d
 
 Would you like an example of **how training data affects real-world AI models**? 🚀
 
+### ML Algorithms
+
+Supervised vs. Unsupervised Learning
+Supervised Learning
+Supervised learning is when an AI model learns from labeled data to predict outcomes for new, unseen input data.
+For example, imagine we want to predict a person's weight based on their height. We have a dataset where each person’s height is mapped to their weight. By plotting this data on a graph, we see a trend—some people are tall and light, while others are short and heavy.
+To find a pattern, we apply linear regression, which creates a straight line that fits the general trend of these data points. Even if the data isn’t perfect, this line helps predict new values—for instance, a 1.6-meter-tall person might weigh 60 kg based on the model.
+Supervised learning is powerful because it learns from labeled examples. However, collecting labeled data for millions of data points can be difficult.
+
+![image](https://github.com/user-attachments/assets/73c82da0-5647-4abd-bf47-c0eb164f4a6e)
+
+
+Unsupervised Learning
+Unsupervised learning doesn’t need labeled data—instead, it finds hidden patterns in raw information.
+For example, instead of predicting weight, imagine we want to group animals by height and weight without pre-labeling them as dogs, cats, or giraffes. The AI will cluster similar animals based on physical traits—some may share weight ranges, while others have similar heights.
+Since the AI isn’t given categories upfront, it discovers patterns on its own, which is useful for tasks like customer segmentation, anomaly detection, and recommendation systems.
+
+![image](https://github.com/user-attachments/assets/8c9f2594-035c-4f33-9f65-4c7084b84425)
+
+Example: Customer Segmentation in E-Commerce
+An online store wants to group customers based on their spending habits and purchase frequency. Using unsupervised learning (clustering), the AI identifies four customer segments:
+1️⃣ High Spenders – Frequently buy expensive products.
+2️⃣ Occasional Buyers – Purchase small items occasionally.
+3️⃣ Discount Seekers – Shop mostly during sales.
+4️⃣ Loyal Customers – Regular shoppers with high brand loyalty
+
+
+
+Key Differences
+| Feature | Supervised Learning | Unsupervised Learning | 
+| Uses labeled data? | ✅ Yes | ❌ No | 
+| Predicts outcomes? | ✅ Yes (Regression, Classification) | ❌ No (Finds patterns) | 
+| Example task | Predicting weight from height | Grouping animals by traits | 
+| Common algorithms | Linear regression, Decision Trees | Clustering (K-Means), PCA | 
+
+
+
+![image](https://github.com/user-attachments/assets/64223a35-9aa8-4e81-b5cc-d419a770fcc4)
+
+
+
 
 
 
