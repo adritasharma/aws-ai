@@ -897,4 +897,4 @@ In this case, data is clean, sometimes we need to modify the data to keep it in 
 
 ### 4. Clean the Data
 
-Make sure our data is ready for Machine Learning. In this case, lot of data contains missing value. So
+Make sure our data is ready for Machine Learning. In this case, lot of data contains missing value because those teams didn't participate in previous olympics
