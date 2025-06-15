@@ -943,7 +943,13 @@ teams = pd.read_csv("teams.csv")
 teams = teams[["team", "country", "year", "athletes", "age", "prev_medals", "medals"]]
 print(teams)
 
+![image](https://github.com/user-attachments/assets/ba078d3f-3c62-4014-9d90-9677d253b4dc)
+
+
 # Find the corelation between each column and the number of medals won
 correlation = teams.select_dtypes(include='number').corr()["medals"].sort_values(ascending=False)
-print("Correlation with medals won:", correlation)   
+print("Correlation with medals won:", correlation)
+
+![image](https://github.com/user-attachments/assets/aa1792f1-8f5d-43fb-8ebd-7b4a2746a277)
+
 ```
