@@ -904,3 +904,18 @@ Make sure our data is ready for Machine Learning. In this case, lot of data cont
 ### 5. Error Metric
 
 Finding the Error Metric that we can use to evaluate the performance of our ML model is good or not. We will Use MAE (Mean Absolute Error)
+
+![image](https://github.com/user-attachments/assets/2123a7e0-a121-4878-8367-8f7a58857e35)
+
+- Error is the actual value in the medals column - Predictions value. If there is nefgative, we drop the negative sign. So we get the absolute error.
+- We take the mean of all the absolute errors, i.e, we add up all the error values and divide bt the number of the predictions we made.
+
+This gives us the mean absolute error
+
+![image](https://github.com/user-attachments/assets/30dab7e0-d30f-4b5c-b3e6-e5e4d43d7ae7)
+
+### 6. Split the Data
+
+
+
+
