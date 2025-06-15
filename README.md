@@ -889,3 +889,5 @@ A Hypotheses is  a statement that we can prove or disprove something using data.
 ### 2. Find the Data
 
 We are using data from the summer olympics. This data contains more than 2000 rows where each row is a single country in a single olympic game.
+
+![image](https://github.com/user-attachments/assets/2460b111-f271-405f-aadd-4432df8c6d65)
