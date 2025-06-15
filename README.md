@@ -952,4 +952,6 @@ print("Correlation with medals won:", correlation)
 ```
 ![image](https://github.com/user-attachments/assets/aa1792f1-8f5d-43fb-8ebd-7b4a2746a277)
 
+While building linear model, we want strong corelation between the column we 're trying to predict and the columns we are trying to use to predict the values.
+
 ```
