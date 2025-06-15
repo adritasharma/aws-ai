@@ -932,3 +932,18 @@ Our model would be more complex, we will use two predictors- No of previous meda
 ( Y = a1x1 + a2x2 + B)
 
 
+Code:
+
+```
+import os
+import pandas as pd
+
+teams = pd.read_csv("teams.csv")
+
+teams = teams[["team", "country", "year", "athletes", "age", "prev_medals", "medals"]]
+print(teams)
+
+# Find the corelation between each column and the number of medals won
+correlation = teams.select_dtypes(include='number').corr()["medals"].sort_values(ascending=False)
+print("Correlation with medals won:", correlation)   
+```
