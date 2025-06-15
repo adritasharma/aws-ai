@@ -647,7 +647,53 @@ Inferencing is the process where a trained AI model makes predictions based on *
 Each method has trade-offs. Choosing between **real-time, batch, edge, or remote inferencing** depends on **speed vs. accuracy needs** and **computational constraints**. Want more details on implementation, Adrita? I can tailor examples for AI/ML frameworks you’re working with! 🚀
 
 
+### **Phases of Machine Larning project**  
 
+![image](https://github.com/user-attachments/assets/3a8d9c65-eb93-45d3-962d-d242e0ec8c0e)
+
+
+Here’s a structured summary of the machine learning project lifecycle:
+1. Identifying a Business Problem
+- Define the problem to solve.
+- Ensure it aligns with business goals.
+2. Framing the Problem as a Machine Learning Problem
+- Convert the business problem into an ML problem.
+- Determine if ML is an appropriate solution.
+- Stakeholders (data scientists, engineers, subject matter experts) collaborate.
+3. Data Collection & Preparation
+- Gather and centralize data.
+- Perform pre-processing and visualization.
+- Conduct exploratory data analysis to understand key trends and correlations.
+4. Feature Engineering
+- Extract, transform, and create relevant features.
+- Ensure data has meaningful attributes for ML models.
+5. Model Development
+- Train the model iteratively.
+- Tune hyperparameters for optimal performance.
+- Evaluate the model using a test dataset.
+- Perform adjustments based on insights.
+6. Checking Business Goals
+- Verify if results align with business expectations.
+- If not, improve the dataset via:
+- Data augmentation (adding more data).
+- Feature augmentation (improving existing features).
+7. Model Optimization & Iteration
+- Continuously refine the model and retrain as needed.
+- Adjust features and hyperparameters based on evaluation.
+- Explore correlations to optimize feature selection.
+8. Model Deployment
+- Select a deployment method:
+- Real-time, batch, serverless, or on-premises.
+- Ensure the model is ready for user predictions.
+9. Monitoring & Debugging
+- Continuously track model performance post-deployment.
+- Detect issues early and mitigate problems before they impact users.
+- Debug failures and analyze model behavior.
+10. Retraining & Continuous Improvement
+- Retrain the model as new data becomes available.
+- Adjust based on changing requirements (e.g., trends in clothing prediction).
+- Ensure model accuracy and relevance over time.
+This structured approach ensures an efficient and iterative ML development cycle. Hope this helps! 🚀
 
 
 
