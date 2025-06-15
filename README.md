@@ -825,3 +825,67 @@ The exam may include a question on this—so keep it in mind!
   
 
   
+# 🏅 Project Summary: Olympic Medal Prediction
+
+## 🎯 Objective
+Predict whether a country will win an Olympic medal based on its **socioeconomic** and **sports-related** features.
+
+---
+
+## 📊 Dataset
+The project uses a CSV file containing data such as:
+
+- **GDP per capita**
+- **Population**
+- **Number of athletes sent**
+- **Past medal performance**
+- **Target**: *Did the country win a medal?* (`Yes` / `No`)
+
+---
+
+## 🔁 Steps Covered
+
+### 1. 🧹 Data Cleaning & Exploration
+- Handle missing values
+- Analyze class imbalance
+- Visualize feature correlations
+
+### 2. 🏗️ Feature Engineering
+- Normalize numeric features
+- Encode categorical variables (e.g., One-Hot Encoding)
+
+### 3. 🧠 Model Selection
+- Use classification algorithms such as:
+  - Logistic Regression
+  - Random Forest Classifier
+
+### 4. 🔍 Hyperparameter Tuning
+- Implement **GridSearchCV** to optimize model performance
+- Cross-validation used for reliable evaluation
+
+### 5. 📏 Model Evaluation
+- Assess model using metrics like:
+  - Accuracy
+  - Precision
+  - Recall
+  - Confusion Matrix
+
+### 6. 📈 Result Interpretation
+- Compare **baseline** vs **tuned** model performance
+- Analyze which features most influence medal outcomes
+
+---
+
+## ✅ Outcome
+A fully functional machine learning pipeline that can predict Olympic medal wins using real-world, country-level data — great for beginners learning ML end-to-end.
+
+
+# 7 step process
+
+### 1. Form a Hypothesis
+
+A Hypotheses is  a statement that we can prove or disprove something using data. Here we are forming hypothesis how many madels a country will win in the Olympics using data. 
+
+### 2. Find the Data
+
+We are using data from the summer olympics. This data contains more than 2000 rows where each row is a single country in a single olympic game.
