@@ -891,3 +891,10 @@ A Hypotheses is  a statement that we can prove or disprove something using data.
 We are using data from the summer olympics. This data contains more than 2000 rows where each row is a single country in a single olympic game.
 
 ![image](https://github.com/user-attachments/assets/2460b111-f271-405f-aadd-4432df8c6d65)
+
+### 3. Reshape the Data
+In this case, data is clean, sometimes we need to modify the data to keep it in single row. We will use Atheles and Prev Medals column to predict how many medals a team will win.
+
+### 4. Clean the Data
+
+Make sure our data is ready for Machine Learning. In this case, lot of data contains missing value. So
