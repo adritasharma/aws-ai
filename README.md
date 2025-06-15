@@ -923,8 +923,12 @@ Split the data into Training and Test Data. If we train the algorithm on the sam
 ### 7. Train a Model
 We will use Liean regressuin  - a ML model that works with an equation. ( Y = ax + B)
 
+Below is single/uni variable linear regression where we are only using No of previous medals to predict the output
+
 ![image](https://github.com/user-attachments/assets/86d1d263-ced2-4330-9335-45c39979c096)
 
+Our model would be more complex, we will use two predictors- No of previous medals and No of participants entered/
 
+( Y = a1x1 + a2x2 + B)
 
 
