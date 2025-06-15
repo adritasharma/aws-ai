@@ -651,49 +651,58 @@ Each method has trade-offs. Choosing between **real-time, batch, edge, or remote
 
 ![image](https://github.com/user-attachments/assets/3a8d9c65-eb93-45d3-962d-d242e0ec8c0e)
 
+# Machine Learning Project Lifecycle
 
-Here’s a structured summary of the machine learning project lifecycle:
-1. Identifying a Business Problem
+## 1. Identifying a Business Problem
 - Define the problem to solve.
 - Ensure it aligns with business goals.
-2. Framing the Problem as a Machine Learning Problem
+
+## 2. Framing the Problem as a Machine Learning Problem
 - Convert the business problem into an ML problem.
 - Determine if ML is an appropriate solution.
-- Stakeholders (data scientists, engineers, subject matter experts) collaborate.
-3. Data Collection & Preparation
+- Collaborate with stakeholders (data scientists, engineers, subject matter experts).
+
+## 3. Data Collection & Preparation
 - Gather and centralize data.
 - Perform pre-processing and visualization.
-- Conduct exploratory data analysis to understand key trends and correlations.
-4. Feature Engineering
+- Conduct **exploratory data analysis** to understand key trends and correlations.
+
+## 4. Feature Engineering
 - Extract, transform, and create relevant features.
 - Ensure data has meaningful attributes for ML models.
-5. Model Development
+
+## 5. Model Development
 - Train the model iteratively.
-- Tune hyperparameters for optimal performance.
+- Tune **hyperparameters** for optimal performance.
 - Evaluate the model using a test dataset.
 - Perform adjustments based on insights.
-6. Checking Business Goals
+
+## 6. Checking Business Goals
 - Verify if results align with business expectations.
 - If not, improve the dataset via:
-- Data augmentation (adding more data).
-- Feature augmentation (improving existing features).
-7. Model Optimization & Iteration
+  - **Data augmentation** (adding more data).
+  - **Feature augmentation** (improving existing features).
+
+## 7. Model Optimization & Iteration
 - Continuously refine the model and retrain as needed.
 - Adjust features and hyperparameters based on evaluation.
 - Explore correlations to optimize feature selection.
-8. Model Deployment
+
+## 8. Model Deployment
 - Select a deployment method:
-- Real-time, batch, serverless, or on-premises.
+  - **Real-time**, **batch**, **serverless**, or **on-premises**.
 - Ensure the model is ready for user predictions.
-9. Monitoring & Debugging
+
+## 9. Monitoring & Debugging
 - Continuously track model performance post-deployment.
 - Detect issues early and mitigate problems before they impact users.
 - Debug failures and analyze model behavior.
-10. Retraining & Continuous Improvement
+
+## 10. Retraining & Continuous Improvement
 - Retrain the model as new data becomes available.
-- Adjust based on changing requirements (e.g., trends in clothing prediction).
+- Adjust based on **changing requirements** (e.g., trends in clothing prediction).
 - Ensure model accuracy and relevance over time.
-This structured approach ensures an efficient and iterative ML development cycle. Hope this helps! 🚀
+
 
 
 ### Hyperparameter Tuning
@@ -775,6 +784,43 @@ Overfitting occurs when the model performs well on training data but fails on ne
 By adjusting these hyperparameters thoughtfully, we achieve an optimal machine learning model that generalizes well.
 
 ---
+
+# When is Machine Learning Not Appropriate?
+
+## **Deterministic Problems**
+Machine learning is not suitable when a problem has a **clear mathematical or logical solution** that can be easily computed. 
+
+### **Example Problem:**
+"A deck contains five red cards, three blue cards, and two yellow cards.  
+What is the probability of drawing a blue card?"
+
+- **Solution**:  
+  - Total cards = **10**
+  - Blue cards = **3**
+  - Probability = **3/10**
+
+Since the answer is straightforward and **exact**, traditional programming is preferable to ML.
+
+---
+
+## **Why Avoid ML for Deterministic Problems?**
+- **ML provides approximate solutions**, whereas deterministic problems require exact answers.
+- **Traditional algorithms** give precise results without approximation or error.
+- **ML techniques (e.g., supervised, unsupervised, reinforcement learning)** introduce uncertainties, making them inferior for problems with fixed mathematical solutions.
+
+---
+
+## **Debunking ML for Reasoning Problems**
+Some may argue that modern **large language models** have reasoning capabilities. While true, their **solutions are not perfect** and introduce errors.  
+For **strict mathematical correctness**, traditional programming is the best approach.
+
+---
+
+## **Key Takeaway**
+Before applying machine learning, determine whether the problem requires **exact computation** or **approximate inference**.  
+If an exact answer is needed, **writing computer code** is the superior choice.
+
+The exam may include a question on this—so keep it in mind!
 
   
 
