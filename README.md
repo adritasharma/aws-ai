@@ -916,6 +916,15 @@ This gives us the mean absolute error
 
 ### 6. Split the Data
 
+Split the data into Training and Test Data. If we train the algorithm on the same data that is used to evaluate, it will give perfect result but fail on new data set. So we split the data and measure Mean Absololue Error on the test data
+
+![image](https://github.com/user-attachments/assets/f0d52405-72fd-4654-9460-ad57d1c7a3db)
+
+### 7. Train a Model
+We will use Liean regressuin  - a ML model that works with an equation. ( Y = ax + B)
+
+![image](https://github.com/user-attachments/assets/86d1d263-ced2-4330-9335-45c39979c096)
+
 
 
 
