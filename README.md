@@ -901,3 +901,6 @@ Make sure our data is ready for Machine Learning. In this case, lot of data cont
 
 ![image](https://github.com/user-attachments/assets/dbec8649-84ed-41fd-a84b-4325a103da55)
 
+### 5. Error Metric
+
+Finding the Error Metric that we can use to evaluate the performance of our ML model is good or not. We will Use MAE (Mean Absolute Error)
