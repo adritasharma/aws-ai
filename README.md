@@ -954,4 +954,160 @@ print("Correlation with medals won:", correlation)
 
 While building linear model, we want strong corelation between the column we 're trying to predict and the columns we are trying to use to predict the values.
 
+Graph to show the corelation. We will import python graphing library `seaborn`
+
 ```
+
+Generative AI
+
+Sure! Here's a concise, bullet-pointed summary of Artificial Neural Networks (ANNs), covering the key components and processes:
+
+---
+
+## 🧠 Artificial Neural Network (ANN) – Short Notes
+
+### 📥 Input Features
+- Represent the raw data fed into the network (e.g., pixel values, numerical attributes).
+- Each feature corresponds to one input neuron.
+- Input layer does not perform computation—just passes data to the next layer.
+
+### 🔄 Hidden Layer(s)
+- Composed of neurons that apply transformations to the input.
+- Each neuron performs:
+  - Weighted sum of inputs:  
+    $$ z = \sum w_i x_i + b $$
+  - Activation function (e.g., ReLU, Sigmoid, Tanh):  
+    $$ a = f(z) $$
+- Multiple hidden layers allow the network to learn complex patterns (deep learning).
+
+### 📤 Output Layer
+- Produces the final prediction or classification.
+- Number of neurons depends on the task:
+  - Regression → 1 neuron
+  - Binary classification → 1 neuron (Sigmoid)
+  - Multi-class classification → n neurons (Softmax)
+
+### 🔁 Forward Propagation
+- Data flows from input → hidden layers → output.
+- Each layer computes:
+  - Weighted sum of inputs
+  - Applies activation function
+- Final output is used for prediction or loss calculation.
+
+### 📉 Loss Calculation
+- Measures the difference between predicted output and actual target.
+- Common loss functions:
+  - Mean Squared Error (MSE) for regression:  
+    $$ \text{MSE} = \frac{1}{n} \sum (y_{\text{true}} - y_{\text{pred}})^2 $$
+  - Binary Cross-Entropy for binary classification:  
+    $$ -[y \log(p) + (1 - y) \log(1 - p)] $$
+  - Categorical Cross-Entropy for multi-class classification.
+
+---
+
+Here's a structured explanation of the code you provided, broken down into logical sections with bullet points for clarity:
+
+---
+
+## 📂 Data Loading
+```python
+data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "Churn_Modelling.csv")
+data = pd.read_csv(data_path)
+```
+- Dynamically constructs the path to the CSV file using the script's location.
+- Loads the customer churn dataset into a pandas DataFrame.
+
+---
+
+## 🧹 Data Preprocessing
+```python
+data = data.drop(['RowNumber', 'CustomerId', 'Surname'], axis=1)
+```
+- Removes irrelevant columns that don't contribute to prediction:
+  - `RowNumber`: just an index.
+  - `CustomerId`: unique ID, not useful for learning.
+  - `Surname`: likely not predictive.
+
+---
+
+## 🏷️ Label Encoding – Gender
+```python
+label_encoder_gender = LabelEncoder()
+data['Gender'] = label_encoder_gender.fit_transform(data['Gender'])
+```
+- Converts categorical `Gender` values (`Male`, `Female`) into numeric form (`0`, `1`).
+- `LabelEncoder` is suitable for binary categorical variables.
+
+---
+
+## 🔢 One-Hot Encoding – Geography
+```python
+oneHotEncoder_geography = OneHotEncoder()
+geography_encoded = oneHotEncoder_geography.fit_transform(data[['Geography']])
+```
+- Transforms `Geography` (e.g., France, Germany, Spain) into one-hot encoded vectors.
+- Each country becomes a separate binary column.
+
+```python
+geography_encoded_df = pd.DataFrame(geography_encoded.toarray(), columns=oneHotEncoder_geography.get_feature_names_out(['Geography']))
+```
+- Converts sparse matrix to a DataFrame with readable column names.
+
+```python
+data = pd.concat([data.drop('Geography', axis=1), geography_encoded_df], axis=1)
+```
+- Drops original `Geography` column and appends the new one-hot encoded columns.
+
+---
+
+## 💾 Save Preprocessed Data
+```python
+output_file = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "processed_data.pkl")
+with open(output_file, 'wb') as f:
+    pickle.dump(data, f)
+```
+- Saves the transformed DataFrame as a `.pkl` file using `pickle` for later use.
+
+---
+
+## 📊 Feature and Target Separation
+```python
+X = data.drop('Exited', axis=1)
+y = data['Exited']
+```
+- `X`: independent variables (features).
+- `y`: dependent variable (`Exited`, i.e., whether the customer churned).
+
+---
+
+## ✂️ Train-Test Split
+```python
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+```
+- Splits data into training (80%) and testing (20%) sets.
+- `random_state=42` ensures reproducibility.
+
+---
+
+## 📏 Feature Scaling
+```python
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+```
+- Standardizes features to have zero mean and unit variance.
+- Prevents features with larger scales from dominating the model.
+
+---
+
+## 💾 Save Scaler
+```python
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "scaler.pkl"), 'wb') as f:
+    pickle.dump(scaler, f)
+```
+- Saves the fitted scaler for future inference or model deployment.
+
+---
+
+Would you like to continue with building the ANN model using this processed data?
+
