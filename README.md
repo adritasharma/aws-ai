@@ -1109,5 +1109,21 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "scal
 
 ---
 
-Would you like to continue with building the ANN model using this processed data?
+# Building ANN Model
+
+```
+    def build_model(self):
+        print("Building ANN model...")
+        model = Sequential()
+        model.add(Dense(64, activation='relu', input_shape=(self.X_train.shape[1],)))  #`HL1` connected with Input Layer
+        model.add(Dense(32, activation='relu'))  # `HL2` connected with `HL1`
+        model.add(Dense(1, activation='sigmoid'))  # Output Layer   
+        print(model.summary())
+
+```
+
+Model Summary
+
+<img width="873" height="326" alt="image" src="https://github.com/user-attachments/assets/1bf27d73-21a3-4fbe-9679-7e1783e45c5e" />
+
 
