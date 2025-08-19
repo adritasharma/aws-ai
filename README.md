@@ -1017,6 +1017,10 @@ data = pd.read_csv(data_path)
 - Dynamically constructs the path to the CSV file using the script's location.
 - Loads the customer churn dataset into a pandas DataFrame.
 
+
+# Generative AI
+
+### Artificial Neural network
 ---
 
 ## 🧹 Data Preprocessing
@@ -1109,5 +1113,61 @@ with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "scal
 
 ---
 
-Would you like to continue with building the ANN model using this processed data?
+# Building ANN Model
+
+```
+    def build_model(self):
+        print("Building ANN model...")
+        model = Sequential()
+        model.add(Dense(64, activation='relu', input_shape=(self.X_train.shape[1],)))  #`HL1` connected with Input Layer
+        model.add(Dense(32, activation='relu'))  # `HL2` connected with `HL1`
+        model.add(Dense(1, activation='sigmoid'))  # Output Layer   
+        print(model.summary())
+
+```
+
+Model Summary
+
+<img width="873" height="326" alt="image" src="https://github.com/user-attachments/assets/1bf27d73-21a3-4fbe-9679-7e1783e45c5e" />
+
+In TensorFlow (and deep learning in general), epochs refer to the number of times the entire training dataset is passed through the neural network during training.
+
+🔁 What Is an Epoch?
+An epoch is one complete cycle through the full training dataset. During each epoch:
+• 	The model sees every sample in the training set once.
+• 	It updates its weights based on the loss computed from predictions vs. actual labels.
+• 	The goal is to gradually minimize the loss and improve accuracy (or other metrics).
+
+Early stopping is a powerful regularization technique used during training to prevent overfitting and save computational resources. It monitors the model’s performance on a validation set and automatically stops training when the performance stops improving.
+
+🛑 Why Use Early Stopping?
+- Prevents overfitting: Stops training before the model starts memorizing noise in the training data.
+- Saves time and compute: Avoids unnecessary epochs once the model has converged.
+- Improves generalization: Helps the model perform better on unseen data.
+
+🔍 How It Works
+During training, early stopping watches a metric (usually validation loss or validation accuracy) after each epoch. If the metric doesn’t improve for a specified number of epochs (called patience), training is halted.
+
+```
+    def train_model(self, model):
+        log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+        tensorboard_callback = TensorBoard(log_dir=log_dir, histogram_freq=1)
+        early_stopping_callback = EarlyStopping(
+            monitor='val_loss',
+            patience=5,
+            restore_best_weights=True
+        )
+        print("Starting model training...")
+        history = model.fit(
+            self.X_train, 
+            self.y_train, 
+            validation_data=(self.X_test, self.y_test),
+            epochs=100, 
+            callbacks=[tensorboard_callback, early_stopping_callback]
+        )
+```
+
+<img width="931" height="365" alt="image" src="https://github.com/user-attachments/assets/a0c6950a-626b-4279-98e3-4238fd1e7607" />
+
+
 
