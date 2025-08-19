@@ -9,10 +9,14 @@ class FeatureTransformer:
         self.data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "Churn_Modelling.csv")
         self.output_data_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "processed_data.pkl")
         self.scaler_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "scaler.pkl")
+        self.label_encoder_gender_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "label_encoder_gender.pkl")
+        self.oneHotEncoder_geography_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "data", "one_hot_encoder_geo.pkl")
         self.data = None
         self.label_encoder_gender = LabelEncoder()
         self.oneHotEncoder_geography = OneHotEncoder()
         self.scaler = StandardScaler()
+        self.X_train = None
+        self.X_test = None
         self.X_train_scaled = None
         self.X_test_scaled = None
         self.y_train = None
@@ -43,13 +47,20 @@ class FeatureTransformer:
     def split_and_scale(self):
         X = self.data.drop('Exited', axis=1)
         y = self.data['Exited']
-        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-        self.X_train_scaled = self.scaler.fit_transform(X_train)
-        self.X_test_scaled = self.scaler.transform(X_test)
-        self.y_train = y_train
-        self.y_test = y_test
+        self.X_train, self.X_test, self.y_train, self.y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+        self.X_train_scaled = self.scaler.fit_transform(self.X_train)
+        self.X_test_scaled = self.scaler.transform(self.X_test)
+    
+        # Save the scaler
         with open(self.scaler_path, 'wb') as f:
             pickle.dump(self.scaler, f)
+
+       # Save Encoders
+        with open(self.label_encoder_gender_path, 'wb') as file:
+            pickle.dump(self.label_encoder_gender, file)   
+
+        with open(self.oneHotEncoder_geography_path, 'wb') as file:
+            pickle.dump(self.oneHotEncoder_geography, file)             
 
     def run(self):
         self.load_data()
@@ -58,4 +69,5 @@ class FeatureTransformer:
         self.encode_geography()
         self.save_processed_data()
         self.split_and_scale()
+        return self.X_train, self.X_test, self.y_train, self.y_test,
 

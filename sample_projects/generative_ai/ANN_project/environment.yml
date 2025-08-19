@@ -1,0 +1,22 @@
+name: tf-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - seaborn
+  - jupyterlab
+  - ipykernel
+  - tensorflow=2.20.0
+  - pip:
+      - openai
+      - langchain
+      - transformers
+      - tiktoken
+      - sentence-transformers
+      - accelerate
